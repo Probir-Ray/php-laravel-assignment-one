@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        position: relative;
+        height: 100%;
+      }
+      main {
+        font-family: "Noto Sans", sans-serif;
+        display: flex;
+        background-color: #fdfcfc;
+        width: 100%;
+        margin: auto auto;
+        position: absolute;
+        top: 50%;
+        transform: translateY(10%);
+      }
+      .card-container {
+        width: 50vw;
+        margin-left: 12vw;
+      }
+      .profile_card {
+        width: 30vw;
+        padding: 30px;
+        margin: 2em auto;
+        background-color: #2c3e50;
+        border-radius: 10px;
+        box-shadow: 3px 2px 9px 3px rgb(0 0 0 / 27%);
+        text-align: center;
+        overflow: hidden;
+      }
+      .profile_card img {
+        width: 180px;
+        object-fit: contain;
+        border-radius: 50%;
+        border: 5px solid #3498db;
+        filter: drop-shadow(1px 1px 2px black);
+      }
+      .profile_card h3 {
+        color: #3498db;
+        font-stretch: condensed;
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 0px;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 1px #2980b9;
+      }
+      .profile_card h5 {
+        color: #ecf0f1;
+        font-size: 17px;
+        font-weight: 400;
+        margin: 5px auto;
+      }
+      .profile_card p {
+        color: rgba(225, 230, 233, 0.9);
+        padding: 0 18px;
+        font-weight: 500;
+        text-align: left;
+        border-left: 10px solid #3498db;
+        margin-left: 3em;
+        font-size: 14px;
+        line-height: 22px;
+      }
+      .profile_card ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .profile_card ul li {
+        color: rgba(225, 230, 233, 0.9);
+        font-size: 15px;
+        float: left;
+        margin-left: 2.8em;
+        margin-bottom: 7px;
+        border-left: 11px solid #3498db;
+        padding-left: 15px;
+      }
+      .profile_card ul li span {
+        color: #3498db;
+      }
+      .social {
+        overflow: hidden;
+        width: 100%;
+        margin-top: 30px;
+      }
+      .social a {
+        font-size: 12px;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 5px;
+        border: 1px solid rgba(225, 230, 233, 0.9);
+        color: rgba(225, 230, 233, 0.9);
+        padding: 10px 18px;
+        text-transform: uppercase;
+      }
+      .social a:hover {
+        background-color: #3498db;
+        color: #fff;
+        border: 1px solid #3498db;
+        cursor: pointer;
+      }
+      .container {
+        width: 45vw;
+        vertical-align: middle;
+        padding-left: 5vw;
+      }
+      .container h1 {
+        color: #3498db;
+        text-shadow: 2px 1px 1px #2980b9;
+        font-size: 102px;
+        line-height: 94px;
+        font-weight: 700;
+        padding-right: 5em;
+      }
+      .container h3 {
+        color: #2980b9;
+        font-size: 42px;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <div class="card-container">
+        <div class="profile_card">
+          <img src="./probir.jfif" alt="" />
+          <h3>Probir Kumar Ray</h3>
+          <h5>Web Designer</h5>
+          <p>
+            I am a web designer, creating a fully responsive website design. I
+            have about 1 year of experience in HTML & CSS.
+          </p>
+          <ul>
+            <li><span>✉</span> probirray20@gmail.com</li>
+            <li><span>☎</span> +880-1734-279563</li>
+          </ul>
+          <br /><br />
+          <div class="social">
+            <a href="https://github.com/Probir-Ray" target="_blank">Follow</a>
+            &nbsp;
+            <a href="https://www.linkedin.com/in/probir20/" target="_blank"
+              >Hire Me</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <h1>Minimal Profile Card</h1>
+        <h3>HTML & CSS</h3>
+      </div>
+    </main>
+  </body>
+</html>
